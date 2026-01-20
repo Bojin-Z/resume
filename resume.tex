@@ -26,7 +26,7 @@ Focus: Biological Sciences, Information Science
 \textit{B.Sc. in Biomedical Sciences}\\
 Core courses: Molecular Biology, Statistics, Data Science, Information Systems
 
-\section{\faUsers\ Experience \& Major Projects}
+\section{\faUsers\ Experience & Major Projects}
 
 \datedsubsection{\textbf{DDR-Origins: Evolutionary Analysis of Pathogenic Variants in DDR Genes}}{2021 -- 2023}
 \role{Computational Biology, Phylogenetics, Ancient DNA}{}
@@ -36,13 +36,10 @@ origins of pathogenic variants in DNA Damage Repair (DDR) genes.
 
 \textbf{Responsibilities:}
 \begin{itemize}
-  \item Performed cross-species sequence alignment, phylogenetic tree construction, and dN/dS
-        selection inference using \textbf{PHAST, PAML, MEGA}.
-  \item Processed \textbf{5000+ ancient human genomes}: BAM cleaning, variant calling,
-        pseudo-mutation correction (mapDamage), and functional annotation.
-  \item Built LAMP-based database (Linux, Apache, MySQL, PHP) for interactive visualization,
-        online query, and multi-dimensional result comparison.
-  \item Integrated Python (Pandas, NumPy), SAMtools, BCFtools, ANNOVAR for scalable data analysis.
+  \item Orchestrated a high-throughput comparative genomics pipeline combining multiple sequence alignment (\textbf{MAFFT, Muscle}) and phylogenetic inference (\textbf{RAxML, IQ-TREE}).
+  \item Applied Maximum Likelihood and Bayesian inference methods using \textbf{PAML (codeml)} and \textbf{PHAST} to detect lineage-specific dN/dS selection pressures.
+  \item Processed raw sequencing data from \textbf{5000+ ancient human genomes}: implemented \textbf{mapDamage} for post-mortem damage pattern analysis, and utilized \textbf{SAMtools/BCFtools} for precise variant calling and filtering.
+  \item Developed a LAMP-stack database (Linux, Apache, MySQL, PHP) incorporating \textbf{JBrowse} for visualization, enabling interactive queries of variant evolutionary trajectories.
 \end{itemize}
 
 \textbf{Outcome:}\\
@@ -59,36 +56,33 @@ dependencies using multi-omics data (expression, mutation, CNV) and PPI networks
 
 \textbf{Responsibilities:}
 \begin{itemize}
-  \item Designed a GNN + Transformer hybrid architecture for cross-level representation learning.
-  \item Built embedding pipeline: Gaussian-mixture-based expression discretization, Gene2Vec
-        embedding, and PPI topology/structure embedding.
-  \item Conducted GPU-based training (NVIDIA), hyperparameter tuning, and context-dependent
-        dependency inference and perturbation simulation.
+  \item Architected a hybrid deep learning model integrating \textbf{Graph Convolutional Networks (GCN)} for PPI topology and \textbf{Multi-Head Self-Attention (Transformer)} for feature context extraction.
+  \item Engineered a robust feature embedding system: applied \textbf{Gaussian Mixture Models (GMM)} for expression discretization and \textbf{Gene2Vec} for dense vector representation of biological entities.
+  \item Optimized model performance via extensive hyperparameter tuning and ablation studies on NVIDIA GPUs, utilizing \textbf{PyTorch Geometric} for graph message passing efficiency.
+  \item Implemented customized loss functions to handle data sparsity in synthetic lethality prediction.
 \end{itemize}
 
 \textbf{Outcome:}\\
 Achieved prediction correlations of \textbf{0.94 (training)} and \textbf{0.91 (testing)}, outperforming
-traditional ML and single deep models; demonstrated utility in synthetic lethality discovery
-and drug target prioritization.
+traditional ML (Random Forest, SVM) and single deep models.
 
 % -----------------------------------------------------
 
-\datedsubsection{\textbf{Asian \textit{BRCA} Variation: Ethnic-specificity, Evolution Origin \& Clinical Impact}}{2021 -- 2022}
+\datedsubsection{\textbf{Asian \textit{BRCA} Variation: Ethnic-specificity, Evolution Origin & Clinical Impact}}{2021 -- 2022}
 \role{Population Genomics, Database Construction, Cancer Genetics}{}
 \textbf{Project Overview:}\\
 Performed a systematic analysis of \textit{BRCA1}/\textit{BRCA2} germline variants in Asian populations, integrating literature mining, database curation, population-level comparison, evolutionary tracing, and clinical significance evaluation.
 
 \textbf{Responsibilities:}
 \begin{itemize}
-  \item Curated and standardized \textbf{7587 \textit{BRCA} variants} from \textbf{685,000+} Asian individuals across 40 countries; conducted HGVS normalization, annotation and ACMG classification.
-  \item Built the open-access \textbf{dbBRCA-Asian} database using \textbf{LAMP (Linux, Apache, MySQL, PHP)} for online \textit{BRCA} variant query, visualization and population comparison.
-  \item Performed comparative population genetics: ethnic-specificity assessment across Asian regions; cross-continental comparison with Latin American, Middle Eastern and European datasets.
-  \item Investigated variant evolutionary origin using \textbf{4800+ ancient human genomes} and Neanderthal/Denisovan genomes to estimate arising time and ancestral distribution.
-  \item Applied structure-based deleteriousness evaluation (Ramachandran Plot–Molecular Dynamics Simulation) to interpret ~500 unknown \textit{BRCA} missense variants.
+  \item Constructed a standardized variant processing workflow using \textbf{VEP (Variant Effect Predictor)} and \textbf{ANNOVAR} for functional annotation across \textbf{685,000+ samples}.
+  \item Conducted population structure analysis using Principal Component Analysis (\textbf{PCA}) and admixture modeling to quantify ethnic specificity across 40 Asian countries.
+  \item Traced variant evolutionary origins by cross-referencing \textbf{PLINK} formatted genotype data with 4800+ ancient genomes and Neanderthal/Denisovan references.
+  \item Assessed protein structural stability for VUS (Variants of Uncertain Significance) using \textbf{Molecular Dynamics (MD) simulations} and Ramachandran plots.
 \end{itemize}
 
 \textbf{Outcome:}\\
-Generated the largest Asian \textit{BRCA} variant dataset to date (7587 variants), revealed strong ethnic-specific patterns and evolutionary origins, and established the \texttt{https://genemutation.boboz.io/Asian-BRCA/} database for clinical and research use.
+Generated the largest Asian \textit{BRCA} variant dataset to date (7587 variants) and established the \texttt{https://genemutation.boboz.io/Asian-BRCA/} database.
 
 % -----------------------------------------------------
 
@@ -110,17 +104,17 @@ For full list: Google Scholar
         \textit{Brief Bioinform}, 2024.
 \end{itemize}
 
-\section{\faCogs\ Skills \& Interests}
+\section{\faCogs\ Skills & Interests}
 \begin{itemize}[parsep=0.5ex]
+  \item \textbf{Bioinformatics Toolkit:} GATK, SAMtools, BCFtools, VCFtools, BEDtools, PLINK, mapDamage, ANNOVAR, VEP, NCBI Entrez Direct (EDirect), SRA Toolkit
+  \item \textbf{Algorithms & Analytics:} HMM (Hidden Markov Model), Maximum Likelihood Estimation, Bayesian Inference, PCA, t-SNE, Clustering (K-Means/Hierarchical)
+  \item \textbf{Deep Learning & Data Science:} PyTorch, PyTorch Geometric (PyG), TensorFlow, Scikit-learn, Pandas, NumPy, SciPy, NetworkX, Matplotlib, Seaborn
+  \item \textbf{Programming Languages:} Python, R, Shell/Bash, PHP, SQL, C/C++ (Basic), \LaTeX
+  \item \textbf{Development & Visualization:} Docker, Git/GitHub, Linux (CentOS/Ubuntu), Adobe Illustrator (Scientific Figures), PyMOL
   \item \textbf{Languages:} Mandarin (Native), English (Fluent; IELTS Speaking 7.0)
-  \item \textbf{Programming \& Scripting:} Shell, Python, R, PHP, SQL, HTML/CSS, JavaScript, \LaTeX
-  \item \textbf{Frameworks \& Libraries:} Biopython, PyTorch, PyTorch Geometric, NetworkX, NumPy,
-        Pandas, scikit-bio, gseapy, scanpy, scvi-tools
-  \item \textbf{Software:} Docker, Conda, Adobe Illustrator, Adobe Photoshop
-  \item \textbf{Interests:} Piano, Snooker
 \end{itemize}
 
 \section{\faFlask\ Professional Interests}
-Multi-Omics Integration · AI-Driven Computational Biology · Graph Neural Networks · Biological LLM-Based Agents
+Multi-Omics Integration \textperiodcentered\ AI-Driven Computational Biology \textperiodcentered\ Graph Neural Networks \textperiodcentered\ Biological LLM-Based Agents
 
 \end{document}
